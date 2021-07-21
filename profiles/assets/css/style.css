@@ -1,0 +1,29 @@
+body {
+    height: 100%;
+    background-color: rgb(77, 178, 168);
+}
+
+footer {
+    font-size: 1em;
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    background-color: rgb(178, 151, 124);
+}
+
+footer h2, div {
+    padding-right: 50px;
+}
+/*
+color: rgb(77, 178, 168); for tealish
+color: rgb(78, 178, 138); deep purple
+color: rgb(226, 184, 40); Yellow
+color: rgb(178, 151, 124); light brownish tan
+color: rgb(218, 56, 69); deep salmon
+font-family: 'Lobster Two', cursive;
+font-family: 'Yomogi', cursive;
+*/
