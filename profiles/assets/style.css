@@ -3,6 +3,32 @@
 html {
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+    width: 2em;
+}
+
+body::-webkit-scrollbar-track {
+    background-image: url('/profiles/assets/images/traveling\ paws.png');
+    background-size: 30px;
+    background-position: center;
+}
+
+body::-webkit-scrollbar-button {
+    background-image: url('/profiles/assets/images/paw\ with\ heart.jpg');
+    background-repeat: no-repeat;
+    min-height: 5em;
+    max-width: 15px;
+}
+
+/*
+body::-webkit-scrollbar-thumb {
+    background-image: url('/profiles/assets/images/paw\ with\ heart.jpg');
+    background-size: 2em;
+    min-block-size: 3em;
+}
+*/
+
 /* Scrolbar Style Ends */
 
 p {
@@ -16,4 +42,5 @@ footer {
     font-family: 'Lobster Two', cursive;
     text-align: center;
     border-radius: 5em;
+    border: dashed 1em;
 }
