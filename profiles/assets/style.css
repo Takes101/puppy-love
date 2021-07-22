@@ -1,0 +1,19 @@
+/* Scrolbar Style Begins */
+
+html {
+    scroll-behavior: smooth;
+}
+/* Scrolbar Style Ends */
+
+p {
+    font-size: 2em;
+}
+
+footer {
+    background-color: rgb(77, 178, 168);
+    font-size: 1em;
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    border-radius: 5em;
+}
