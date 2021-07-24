@@ -7,28 +7,110 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Yomogi&display=swap" rel="stylesheet">
+      <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css"> -->
         <link rel="stylesheet" href="./profiles/assets/style.css" />
         <title>Furfile</title>
     </head>
     <body>
         <header>
             <h1 id="top" class="furfile">Furfile</h1>
-        <!--    <img src="./profiles/assets/images/bone.png" alt="Avatar" class="avatar"> -->
-        
-            <nav>
-
-            </nav>
-        
+        <!--   <img src="./profiles/assets/images/bone.png" alt="Avatar" class="avatar"> -->
         </header>
+        
+        <!-- Create the buttons to become the tags -->
+        <button class="tab" onclick="openPage('Gallery', this, '#EDECEF')">Gallery</button>
+        <button class="tab" onclick="openPage('Furfriends', this, '#D16E79')">Furfriends</button>
+        <button class="tab" onclick="openPage('Calendar', this, '#1CBCB5')" id="defaultOpen">Calendar</button>
+        <button class="tab" onclick="openPage('Puppy-Diaries', this, '#A9C2B9')">Puppy Diaries</button>
+        <button class="tab" onclick="openPage('Bark-Chronicles', this, '#242F48')">Bark Chronicles</button>
+        <button class="tab" onclick="openPage('Social-Media', this, 'black')">Social Media</button>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam ipsam voluptates autem expedita odit sunt mollitia nostrum velit maxime culpa sed esse ex reprehenderit, illum repellat. Placeat, atque eius.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur excepturi, fugit exercitationem obcaecati animi dolor minus fugiat ipsa, laboriosam nulla vero dolore? Voluptas odit assumenda non, voluptate ipsum tenetur dicta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis deleniti quos neque placeat eius porro impedit voluptatum, obcaecati tenetur minima, animi eligendi a ipsum tempora, blanditiis aspernatur. Possimus, molestiae obcaecati!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque tenetur ut ipsa quam quidem. Quos dolores ipsa pariatur odio hic aliquid voluptatum deserunt, quas laborum, quam sunt eligendi dolor.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro quia molestiae, corrupti voluptates facere asperiores, dolores recusandae provident maxime aut. Id ullam est, veritatis soluta molestiae ea blanditiis? Voluptatum?</p>
+        <section>
+        <!-- Create the content for the tabs -->
+        <div id="Gallery" class="content">
+            <h4>Take a Look!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+        </div>
 
-        <footer>
+        <div id="Furfriends" class="content">
+            <h4>Meet my peeps!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+        </div>
+
+        <div id="Calendar" class="content">
+            <h4>My Life!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+        </div>
+
+        <div id="Puppy-Diaries" class="content">
+            <h4>Guess what I did today!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+        </div>
+
+        <div id="Bark-Chronicles" class="content">
+            <h4>Look what our humans talk about!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+        </div>
+
+        <div id="Social-Media" class="content">
+            <h4>Stay in touch!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+        </div>
+        
+
+        <!--
+        <div id="tabNames">
+            <ul>
+                <li><a href="#photos">Gallery</a></li>
+                <li><a href="#peeps">Furfriends</a></li>
+                <li><a href="#life">Calendar</a></li>
+                <li><a href="#journal">Puppy Diaries</a></li>
+                <li><a href="#dashboard">Bark Chronicles</a></li>
+                <li><a href="#social">Social Media</a></li>
+            </ul>
+            
+            !- Gallery Collage of pictures that can be changed by drag and drop --
+            <div id="photos">Take a Look!</div>
+            
+            !-- Furfriends Liks to other profiles for contact info, plan doggie play date, doggie road trip --
+            <div id="peeps">Meet my peeps!</div>
+
+            !-- Calendar is a schedule of events, will have different cards "Doggie Hotel api, Dog parks api, Doggie cafe api, Doggie sitter api" --
+            <div id="life">My Life!</div>
+
+            !-- Puppy Diaries is life from the dogs persective --
+            <div id="journal">Guess what I did today!</div>
+
+            !-- Bark Chronicles is the Human dashboard/diary for communicating with other dog owners --
+            <div id="dashboard">Look what our humans talk about!</div>
+
+            !-- Social media will have clickable profile avatars that float left and when clicked the social meadia for that avatar will appear like the top tabs ->
+            <div id="social">Stay in touch!</div>
+        -->
+        </div>
+
+    </section>
+        
+        <footer class="footer">
             <h2>
                 Made for your fur babies by Team "Refreshed"
             </h2>
@@ -42,6 +124,10 @@
                 </h4>
             </div>
         </footer>
-        
+
+       <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+        <script src="./profiles/assets/script.js"></script>
+
     </body>
 </html>

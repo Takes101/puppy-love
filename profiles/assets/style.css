@@ -1,15 +1,90 @@
-/* Header begins */
+*{
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+}
 
-/*header {
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Lobster Two', cursive;
+} 
+
+/* Style the Buttons for the Tabs Begins */
+
+.tab {
+    background-color: rgb(28, 188, 181);
+    color: rgb(218, 56, 69);
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 1em 2em;
+    width: 16.662%;
+}
+
+.tab:hover {
+    background-color: rgb(226, 184, 40);
+    border-top: solid rgb(209, 110, 121);
+    border-left: solid rgb(209, 110, 121);
+    border-right: solid rgb(209, 110, 121);
+}
+
+#Gallery {
+    background-color: rgb(237, 236, 239);
+}
+
+#Furfriends {
+    background-color: rgb(209, 110, 121);
+}
+
+#Calendar {
+    background-color: rgb(28, 188, 181);
+}
+
+#Puppy-Diaries {
+    background-color: rgb(169, 194, 185);
+}
+
+#Bark-Chronicles {
+    background-color: rgb(36, 47, 72);
+}
+
+#Social-Media {
+    background-color: black;
+}
+
+.content {
+    color: rgb(218, 56, 69);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    font-size: 2em;
+}
+
+/* Style the Buttons for the Tabs Ends */
+
+/*
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Lobster Two', cursive;
+}
+
+
+/* Header begins //
+
+header {
     height: 20em;
     background: rgb(77, 178, 168);
     font-family: 'Lobster Two', cursive;
     overflow: hidden;
-}*/
-
-content {
-padding: 15px;
-font-size: 5em;
 }
 
 .furfile {
@@ -22,11 +97,7 @@ h4 {
 }
 /* Header Ends */
 
-body {
-    margin: 0;
-}
-
-/* Avatar Begins */
+/* Avatar Begins //
 
 .avatar {
     vertical-align: middle;
@@ -36,16 +107,11 @@ body {
     padding: 10px;
     margin: 15px;
     border: solid black 1em;
-
 } 
 
 /* Avatar Ends */
 
-/* Scrolbar Style Begins */
-
-html {
-    scroll-behavior: smooth;
-}
+/* Scrolbar Style Begins //
 
 body::-webkit-scrollbar {
     width: 2em;
@@ -71,12 +137,12 @@ body::-webkit-scrollbar-thumb {
 }
 */
 
-/* Scrolbar Style Ends */
+/* Scrolbar Style Ends //
 
 p {
     font-size: 2em;
 }
-/*
+
 footer {
     background-color: rgb(77, 178, 168);
     font-size: 1em;
@@ -85,16 +151,26 @@ footer {
     text-align: center;
     border-radius: 5em;
     border: dashed 1em;
-} */
+    min-height: 15vh;
+    margin: 9.28em 0 0 0; /*to be changed, needs to review module 5 delete red footer*/
+    /*width: 100%;
+    
+    position: relative;
+    flex-direction:column;
+};
+
 
 
 
 /*
-color: rgb(77, 178, 168); for tealish
-color: rgb(78, 178, 138); deep purple
-color: rgb(226, 184, 40); Yellow
-color: rgb(178, 151, 124); light brownish tan
-color: rgb(218, 56, 69); deep salmon
+color: rgb(36, 47, 72); // Hex #242F48 // purple
+color: rgb(209, 110, 121); // Hex #D16E79 // salmon
+color: rgb(218, 56, 69); // Hex #da3845 // darker salmon
+color: rgb(169, 194, 185); // Hex #A9C2B9 // bluish grey
+color: rgb(237, 236, 239); // Hex #EDECEF //pale green
+color: rgb(28, 188, 181); // Hex #1CBCB5 // tealish
+color: 	rgb(0, 0, 0), // Hex #000000 // black
+
 font-family: 'Lobster Two', cursive;
 font-family: 'Yomogi', cursive;
 */
