@@ -1,0 +1,95 @@
+/* Header begins */
+
+header {
+    height: 20em;
+    background: rgb(77, 178, 168);
+    font-family: 'Lobster Two', cursive;
+    overflow: hidden;
+}
+
+h1 {
+margin-left: 15px;
+font-size: 5em;
+}
+
+.furfile {
+margin: 5px;
+}
+
+/* Header Ends */
+
+body {
+    margin: 0;
+}
+
+/* Avatar Begins */
+/*
+.avatar {
+    vertical-align: middle;
+    width: 7em;
+    height: 10em;
+    border-radius: 1em 2em 3em 5em;
+    padding: 10px;
+    margin: 15px;
+    border: solid black 1em;
+} */
+
+/* Avatar Ends */
+
+/* Scrolbar Style Begins */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 2em;
+}
+
+body::-webkit-scrollbar-track {
+    background-image: url('/profiles/assets/images/traveling\ paws.png');
+    background-size: 30px;
+    background-position: center;
+}
+
+body::-webkit-scrollbar-button {
+    background-image: url('/profiles/assets/images/paw\ with\ heart\ small.jpg');
+    background-repeat: no-repeat;
+    min-height: 2em;
+}
+
+/*
+body::-webkit-scrollbar-thumb {
+    background-image: url('/profiles/assets/images/paw\ with\ heart.jpg');
+    background-size: 2em;
+    min-block-size: 3em;
+}
+*/
+
+/* Scrolbar Style Ends */
+
+p {
+    font-size: 2em;
+}
+
+footer {
+    background-color: rgb(77, 178, 168);
+    font-size: 1em;
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    border-radius: 5em;
+    border: dashed 1em;
+}
+
+
+
+/*
+color: rgb(77, 178, 168); for tealish
+color: rgb(78, 178, 138); deep purple
+color: rgb(226, 184, 40); Yellow
+color: rgb(178, 151, 124); light brownish tan
+color: rgb(218, 56, 69); deep salmon
+font-family: 'Lobster Two', cursive;
+font-family: 'Yomogi', cursive;
+*/
