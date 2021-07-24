@@ -70,6 +70,21 @@ body {
 
 /* Style the Buttons for the Tabs Ends */
 
+/* Social Media Page Icons Begin *
+
+.flex {
+
+} */
+
+.fa {
+    float: center;
+    padding: 40px;
+}
+
+/* Social Media Page Icons Ends */
+
+
+
 /*
 body {
     margin: 0;
