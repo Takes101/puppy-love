@@ -1,14 +1,14 @@
 /* Header begins */
 
-header {
+/*header {
     height: 20em;
     background: rgb(77, 178, 168);
     font-family: 'Lobster Two', cursive;
     overflow: hidden;
-}
+}*/
 
-h1 {
-margin-left: 15px;
+content {
+padding: 15px;
 font-size: 5em;
 }
 
@@ -16,6 +16,10 @@ font-size: 5em;
 margin: 5px;
 }
 
+h4 {
+    color: white;
+    font-family: 'Lobster Two', cursive;
+}
 /* Header Ends */
 
 body {
@@ -23,7 +27,7 @@ body {
 }
 
 /* Avatar Begins */
-/*
+
 .avatar {
     vertical-align: middle;
     width: 7em;
@@ -32,7 +36,8 @@ body {
     padding: 10px;
     margin: 15px;
     border: solid black 1em;
-} */
+
+} 
 
 /* Avatar Ends */
 
@@ -71,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 p {
     font-size: 2em;
 }
-
+/*
 footer {
     background-color: rgb(77, 178, 168);
     font-size: 1em;
@@ -80,7 +85,7 @@ footer {
     text-align: center;
     border-radius: 5em;
     border: dashed 1em;
-}
+} */
 
 
 
