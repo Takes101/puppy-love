@@ -11,8 +11,7 @@ html {
 
 body {
     margin: 0;
-    min-height: 100vh;
-    font-family: 'Lobster Two', cursive;
+    min-height: 100vh;  
 } 
 
 /* Header Style Begins */
@@ -24,12 +23,11 @@ body {
 
 /* Header Style Ends */
 
-
-
 /* Style the Buttons for the Tabs Begins */
 
 h4 {
-    text-align: center;    
+    text-align: center;
+    font-weight: bolder;   
 }
 
 .tab {

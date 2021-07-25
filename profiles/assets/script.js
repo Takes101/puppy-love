@@ -17,7 +17,7 @@ function openPage(tabName, elmnt, color) {
 };
 
 // This tab will open by default //
-document.getElementById("defaultOpen").click;
+document.getElementById("defaultOpen").click();
 
 /*
 $(function() {
