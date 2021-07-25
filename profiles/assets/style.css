@@ -16,12 +16,38 @@ body {
 
 /* Header Style Begins */
 
-.header {
-    padding: 15px 10px 180px 10px;
+header img {
+    width: 50%;
+    height: 50%;
+}
+header {
     background-color: rgb(28, 188, 181);
 }
+.header h1 {
+    padding: 15px 10px;
+}
 
+.furfile {
+    color: rgb(218, 56, 69);;
+}
 /* Header Style Ends */
+
+/* Avatar Begins */
+
+.avatar {
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: rgb(77, 178, 168);
+    width: 17em;
+    height: 19em;
+    padding: 5px;
+    border-radius: 50%;
+    border: solid rgb(255, 255, 255) 15px;
+    box-shadow: -3px 0 rgb(209, 110, 121), 0 3px rgb(209, 110, 121), 3px 0 rgb(209, 110, 121), 0 -3px rgb(209, 110, 121);
+} 
+
+/* Avatar Ends */
 
 /* Style the Buttons for the Tabs Begins */
 
@@ -50,7 +76,7 @@ h4 {
     font-size: 24px;
 }
 
-#Gallery {
+#My-Fav-Links {
     background-color: rgb(237, 236, 239);
 }
 
@@ -85,7 +111,6 @@ h4 {
 /* Style the Buttons for the Tabs Ends */
 
 /* Social Media Page Icons Begin */
-
 
 .fa:hover {
     background: rgb(209, 110, 121);
@@ -124,7 +149,6 @@ h4 {
     background: rgb(85, 172, 238);
     color: white;
     border-radius: 40px 40px 40px 10px;
-  
 }
 
 .fa-snapchat-ghost {
@@ -161,19 +185,7 @@ footer {
 
 /* Footer Ends */
 
-/* Avatar Begins //
 
-.avatar {
-    vertical-align: middle;
-    width: 7em;
-    height: 10em;
-    border-radius: 1em 2em 3em 5em;
-    padding: 10px;
-    margin: 15px;
-    border: solid black 1em;
-} 
-
-/* Avatar Ends */
 
 /* Scrolbar Style Begins //
 

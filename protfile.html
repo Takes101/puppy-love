@@ -18,12 +18,12 @@
     <body>
         <header class="header">
             <h1 id="top" class="furfile">Furfile</h1>
-        <!--   <img src="./profiles/assets/images/bone.png" alt="Avatar" class="avatar"> -->
+            <img src="./profiles/assets/images/paw with heart.jpg" alt="Avatar" class="avatar">
         </header>
         
         <div>
             <!-- Create the buttons to become the tags -->
-            <button class="tab" onclick="openPage('Gallery', this, '#EDECEF')" id="defaultOpen">Gallery</button>
+            <button class="tab" onclick="openPage('My-Fav-Links', this, '#EDECEF')" id="defaultOpen">My Fav Links!</button>
             <button class="tab" onclick="openPage('Furfriends', this, '#D16E79')">Furfriends</button>
             <button class="tab" onclick="openPage('Calendar', this, '#ffffff')" >Calendar</button>
             <button class="tab" onclick="openPage('Puppy-Diaries', this, '#A9C2B9')">Puppy Diaries</button>
@@ -31,11 +31,11 @@
             <button class="tab" onclick="openPage('Social-Media', this, 'black')">Social Media</button>
         </div>
         <section">
-        <!-- Create the content for the tabs -->
-        <div id="Gallery" class="content" >
+        <!-- Create the content for the tabs (flexbox shrink)-->
+        <div id="My-Fav-Links" class="content" >
             <h4 style="font-weight: bold;">Take a Look!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            <a href="https://www.bringfido.com/track?aid=XXX"><img src="https://media.bringfido.com/banners/1.jpg" border="0" /></a>
+            <a href="https://www.petsit.com/stuff/contentmgr/files/9/818a6902cce41bd28aeb85c760810099/files/janfeb2020_pet_sitters_world_magazine_download.pdf"><img src="./profiles/assets/images/Pet Sitter's World Magazine.png" width="15%" height="15%"></a>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
         </div>
@@ -87,7 +87,7 @@
         <!--
         <div id="tabNames">
             <ul>
-                <li><a href="#photos">Gallery</a></li>
+                <li><a href="#photos">My Fav Links!</a></li>
                 <li><a href="#peeps">Furfriends</a></li>
                 <li><a href="#life">Calendar</a></li>
                 <li><a href="#journal">Puppy Diaries</a></li>
@@ -95,7 +95,7 @@
                 <li><a href="#social">Social Media</a></li>
             </ul>
             
-            !- Gallery Collage of pictures that can be changed by drag and drop --
+            !- My Fav Links! list favorite websites --
             <div id="photos">Take a Look!</div>
             
             !-- Furfriends Liks to other profiles for contact info, plan doggie play date, doggie road trip --
