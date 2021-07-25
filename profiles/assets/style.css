@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;  
+} 
+
+/* Header Style Begins */
+
+header img {
+    width: 50%;
+    height: 50%;
+}
+header {
+    background-color: rgb(28, 188, 181);
+}
+.header h1 {
+    padding: 15px 10px;
+}
+
+.furfile {
+    color: rgb(218, 56, 69);;
+}
+/* Header Style Ends */
+
+/* Avatar Begins */
+
+.avatar {
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: rgb(77, 178, 168);
+    width: 17em;
+    height: 19em;
+    padding: 5px;
+    border-radius: 50%;
+    border: solid rgb(255, 255, 255) 15px;
+    box-shadow: -3px 0 rgb(209, 110, 121), 0 3px rgb(209, 110, 121), 3px 0 rgb(209, 110, 121), 0 -3px rgb(209, 110, 121);
+} 
+
+/* Avatar Ends */
+
+/* Style the Buttons for the Tabs Begins */
+
+h4 {
+    text-align: center;
+    font-weight: bolder;   
+}
+
+.tab {
+    background-color: rgb(28, 188, 181);
+    color: rgb(218, 56, 69);
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 1em 1em;
+    width: 16.662%;
+}
+
+.tab:hover {
+    background-color: rgb(226, 184, 40);
+    border-top: solid rgb(209, 110, 121);
+    border-left: solid rgb(209, 110, 121);
+    border-right: solid rgb(209, 110, 121);
+    font-size: 24px;
+}
+
+#My-Fav-Links {
+    background-color: rgb(237, 236, 239);
+}
+
+#Furfriends {
+    background-color: rgb(209, 110, 121);
+}
+
+#Calendar {
+    background-color: rgb(255, 255, 255);
+}
+
+#Puppy-Diaries {
+    background-color: rgb(169, 194, 185);
+}
+
+#Bark-Chronicles {
+    background-color: rgb(36, 47, 72);
+}
+
+#Social-Media {
+    background-color: black;
+}
+
+.content {
+    color: rgb(218, 56, 69);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    font-size: 2em;
+}
+
+/* Style the Buttons for the Tabs Ends */
+
+/* Social Media Page Icons Begin */
+
+.fa:hover {
+    background: rgb(209, 110, 121);
+}
+
+.fa {
+    padding: 40px;
+    margin: 15px;
+}
+
+.fa-facebook {
+    background: rgb(59, 89, 152);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-youtube {
+    background: rgb(187, 0, 0);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-pinterest {
+    background: rgb(203, 32, 39);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-instagram {
+    background: rgb(18, 86, 136);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-twitter {
+    background: rgb(85, 172, 238);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-snapchat-ghost {
+    background: rgb(255, 252, 0);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 5em 2em 5em 2em;
+}
+
+/* Social Media Page Icons Ends */
+
+/* Footer Begins */
+
+footer {
+    background-color: rgb(77, 178, 168);
+    font-size: 1em;
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    border-radius: 5em;
+    border: dashed 1em;
+    min-height: 15vh;
+    position: sticky;
+    top: 100%;
+}
+
+/* Footer Ends */
+
+
+
+/* Scrolbar Style Begins //
+
+body::-webkit-scrollbar {
+    width: 2em;
+}
+
+body::-webkit-scrollbar-track {
+    background-image: url('/profiles/assets/images/traveling\ paws.png');
+    background-size: 30px;
+    background-position: center;
+}
+
+body::-webkit-scrollbar-button {
+    background-image: url('/profiles/assets/images/paw\ with\ heart\ small.jpg');
+    background-repeat: no-repeat;
+    min-height: 2em;
+}
+
+/*
+body::-webkit-scrollbar-thumb {
+    background-image: url('/profiles/assets/images/paw\ with\ heart.jpg');
+    background-size: 2em;
+    min-block-size: 3em;
+}
+*/
+
+/* Scrolbar Style Ends //
+
+/*
+color: rgb(36, 47, 72); // Hex #242F48 // purple
+color: rgb(209, 110, 121); // Hex #D16E79 // salmon
+color: rgb(218, 56, 69); // Hex #da3845 // darker salmon
+color: rgb(169, 194, 185); // Hex #A9C2B9 // bluish grey
+color: rgb(237, 236, 239); // Hex #EDECEF //pale green
+color: rgb(28, 188, 181); // Hex #1CBCB5 // tealish
+color: rgb(0, 0, 0), // Hex #000000 // black
+color: rgb(255, 255, 255) // Hex #ffffff // white
+
+Scocial Media colors
+background: rgb(59, 89, 152); // Hex #3b5998 // Facebook
+background: rgb(187, 0, 0); // Hex #bb0000 // YouTube
+background: rgb(203, 32, 39); // Hex #cb2027 // Pinterest
+background: rgb(18, 86, 136); // Hex #125688 // Instagram
+background: rgb(85, 172, 238); // Hex #55ACEE // Twitter
+background: rgb(255, 252, 0); // Hex #fffc00 //Snapchat
+
+font-family: 'Lobster Two', cursive;
+font-family: 'Yomogi', cursive;
+*/
