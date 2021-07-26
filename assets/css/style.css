@@ -8,19 +8,18 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
-    /*Hero-section*/
+  /*Hero-section*/
   .hero-head {
     text-align: center;
     background-color: rgb(107, 188, 181);
   }
-.navbar-bg {
+  .navbar-bg {
     background-color: rgb(107, 188, 181);
-}
+  }
   .hero-body-background {
     text-align: center;
     background-color: white;
   }
-
   .btn-primary {
      background-color: rgb(107, 188, 181);
      color: rgb(209,110,121);
@@ -29,6 +28,7 @@
     background-color: rgb(107, 188, 181);
     text-align: center;
   }
+
 /*Card-Section*/
 .card{
   top: 50%;
@@ -102,4 +102,58 @@
     float: right;
     line-height: 1.5;
     text-align: center;
+  }
+
+  /*About-Us Section*/
+  #about-us{
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+  }
+  #about-card{
+    width: 40%;
+    transform: translate(-120%,-200%);
+    border-style: solid;
+    border-color: black;
+  }
+  #about-header{
+    width:100%;
+    background-color: rgb(169,194,185);
+    color: rgb(209,110,121);
+    font-size: 26px;
+    padding: 20px;
+  }
+  .stories{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-13%);
+  }
+  .story{
+    width:900px;
+    background-color: rgb(169,194,185);
+    font-size: 20px;
+    padding: 20px;
+  }
+  .stories img{
+    border-radius: 50%;
+    /*change img size*/
+    /*add img border*/
+    /*add overflow*/
+  }
+
+  /*Team Section*/
+  #team{
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    transform: translate(0%,-40%);
+  }
+  .team-title{
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    transform: translate(0%,-300%);
+    text-align: center;
+    color:white;
   }
