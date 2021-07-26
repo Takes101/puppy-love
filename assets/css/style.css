@@ -8,11 +8,11 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-  /*Hero-section*/
-.hero-head {
-  text-align: center;
-  background-color: rgb(107, 188, 181);
-}
+    /*Hero-section*/
+  .hero-head {
+    text-align: center;
+    background-color: rgb(107, 188, 181);
+  }
 .navbar-bg {
   background-color: rgb(107, 188, 181);
 }
