@@ -29,16 +29,35 @@
     background-color: rgb(107, 188, 181);
     text-align: center;
   }
+/*Card-Section*/
+.card{
+  top: 50%;
+  left: 50%;
+  transform: translate(-67%,-55%);
+  border-style: solid;
+  border-color: black;
+}
+.card-header{
+  background-color: rgb(169,194,185);
+  color: rgb(209,110,121);
+  font-size: 26px;
+}
+
 /*How-To Section Home Page*/
   section {
-    padding: 60px;
+    padding: 55px;
     background-color: rgb(169,194,185);
+    width: 70%; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,1%);
   }
   .steps {
     text-align: center;
   }
   .steps div {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
   .steps img {
     width: 15%;
@@ -65,18 +84,22 @@
   footer {
     width: 100%;
     padding: 40px 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,1%);
   }
   footer img {
-    width: 15%;
+    width: 5%;
     margin: 10px 0;
   }
   footer h3 {
-    display: inline;
     font-size: 30px;
-    margin: 0;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
   }
   footer div {
     float: right;
     line-height: 1.5;
-    text-align: right;
+    text-align: center;
   }
