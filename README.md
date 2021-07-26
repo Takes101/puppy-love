@@ -28,10 +28,10 @@
 
 ## Authors and acknowledgement
 
-Will Takes
-Liliana
-Nina Davis
-LaMonica Arnold
+* Will Takes
+* Liliana
+* Nina Davis
+* LaMonica Arnold
 
 ## User story
 
