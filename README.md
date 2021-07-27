@@ -6,13 +6,16 @@
 
 * Puppy Love provides a safe place for pets and pet owners to connect!
 
-## Badges
-
 ## Visuals
 
 <!-- include gif of usage -->
 
-## Usage
+## Technologies Used
+
+* 
+* 
+* 
+* 
 
 ## Support
 
@@ -29,7 +32,7 @@
 ## Authors and acknowledgement
 
 * Will Takes
-* Liliana
+* Liliana Cortes
 * Nina Davis
 * LaMonica Arnold
 
