@@ -7,11 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Yomogi&display=swap" rel="stylesheet">
-      <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./profiles/assets/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./profiles/assets/style.css" />
         <title>Furfile</title>
         <link rel="shortcut icon" type="image/jpg" href="./profiles/assets/images/paw with heart small.jpg" />
     </head>
@@ -23,7 +24,7 @@
         
         <div>
             <!-- Create the buttons to become the tags -->
-            <button class="tab" onclick="openPage('My-Fav-Links', this, '#EDECEF')" id="defaultOpen">My Fav Links!</button>
+            <button class="tab" onclick="openPage('My-Fav-Links', this, '#EDECEF')" >My Fav Links!</button> 
             <button class="tab" onclick="openPage('Furfriends', this, '#D16E79')">Furfriends</button>
             <button class="tab" onclick="openPage('Calendar', this, '#ffffff')" >Calendar</button>
             <button class="tab" onclick="openPage('Puppy-Diaries', this, '#A9C2B9')">Puppy Diaries</button>
@@ -31,91 +32,91 @@
             <button class="tab" onclick="openPage('Social-Media', this, 'black')">Social Media</button>
         </div>
         <section">
-        <!-- Create the content for the tabs (flexbox shrink)-->
-        <div id="My-Fav-Links" class="content" >
-            <h4 style="font-weight: bold;">Take a Look!</h4>
-            <a href="https://www.bringfido.com/track?aid=XXX"><img src="https://media.bringfido.com/banners/1.jpg" border="0" /></a>
-            <a href="https://www.petsit.com/stuff/contentmgr/files/9/818a6902cce41bd28aeb85c760810099/files/janfeb2020_pet_sitters_world_magazine_download.pdf"><img src="./profiles/assets/images/Pet Sitter's World Magazine.png" width="15%" height="15%"></a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Furfriends" class="content">
-            <h4 style="font-weight: bold;">Meet my peeps!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Calendar" class="content">
-            <div class="elfsight-app-a2f34c6d-37f1-4a77-8fad-88b20a3cb920"></div>
-        </div>
-
-        <div id="Puppy-Diaries" class="content">
-            <h4 style="font-weight: bold;">Guess what I did today!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Bark-Chronicles" class="content">
-            <h4 style="font-weight: bold;">Look what our humans talk about!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Social-Media" class="content container-fluid">
-            <h4 style="font-weight: bold;">Stay in touch!</h4>
-            <div class="icons">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+            <!-- Create the content for the tabs (flexbox shrink)-->
+            <div id="My-Fav-Links" class="content" >
+                <h4 style="font-weight: bold;">Take a Look!</h4>
+                <a href="https://www.bringfido.com/track?aid=XXX"><img src="https://media.bringfido.com/banners/1.jpg" border="0" /></a>
+                <a href="https://www.petsit.com/stuff/contentmgr/files/9/818a6902cce41bd28aeb85c760810099/files/janfeb2020_pet_sitters_world_magazine_download.pdf"><img src="./profiles/assets/images/Pet Sitter's World Magazine.png" width="15%" height="15%"></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
             </div>
 
-            <div class="elfsight-app-999183b6-b289-4ff7-bc35-3fcaa73a97eb"></div>
+            <div id="Furfriends" class="content">
+                <h4 style="font-weight: bold;">Meet my peeps!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            </div>
 
-        </div>
-        
+            <div id="Calendar" class="content">
+                <div class="elfsight-app-a2f34c6d-37f1-4a77-8fad-88b20a3cb920"></div>
+            </div>
 
-        <!--
-        <div id="tabNames">
-            <ul>
-                <li><a href="#photos">My Fav Links!</a></li>
-                <li><a href="#peeps">Furfriends</a></li>
-                <li><a href="#life">Calendar</a></li>
-                <li><a href="#journal">Puppy Diaries</a></li>
-                <li><a href="#dashboard">Bark Chronicles</a></li>
-                <li><a href="#social">Social Media</a></li>
-            </ul>
-            
-            !- My Fav Links! list favorite websites --
-            <div id="photos">Take a Look!</div>
-            
-            !-- Furfriends Liks to other profiles for contact info, plan doggie play date, doggie road trip --
-            <div id="peeps">Meet my peeps!</div>
+            <div id="Puppy-Diaries" class="content">
+                <!-- Journal Post Begins -->
+                <main class="col-12 col-lg-12 d-inline-flex flex-column">
+                    <div class="m5 row justify-content-between">
+                        <div class="col-12 col-md-6 col-xl-3 mb-3">
+                            <div class="card">
+                                <h4 style="font-weight: bold;">Guess what I did today!</h4>
+                                <ul id="add-today" class="add-group"></ul>
+                                <li id="post-item" class="add-post">post1</li>
+                                <button type="submit" class="btn" id="btn-add">Add Post</button>
+                            </div>
+                        </div> 
+                        
+                        <div class="col-12 col-md-6 col-xl-3 mb-3">
+                            <div class="card">
+                                <h4 style="font-weight: bold;">My Plans for Tomorrow!</h4>
+                                <ul id="add-tomorrow" class="add-group">
+                                    <li class="add-post">post2</li>
+                                </ul>
+                                <button type="submit" class="btn-2" id="btn-2-add">Add Post</button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 col-xl-3 mb-4">
+                            <div class="card">
+                                <h4 style="font-weight: bold;">Bucket List!</h4>
+                                <ul id="add-future" class="add-group"></ul>
+                                <button type="submit" class="btn-3" id="btn-3-add">Add Post</button>
+                            </div>
+                        </div>
 
-            !-- Calendar is a schedule of events, will have different cards "Doggie Hotel api, Dog parks api, Doggie cafe api, Doggie sitter api" --
-            <div id="life">My Life!</div>
+                    </div>
+                </main>
 
-            !-- Puppy Diaries is life from the dogs persective --
-            <div id="journal">Guess what I did today!</div>
+                <!-- Modal Begins --
 
-            !-- Bark Chronicles is the Human dashboard/diary for communicating with other dog owners --
-            <div id="dashboard">Look what our humans talk about!</div>
+                <button type="button" class="btn btn-post">Tell 'em!</button>
+                <button type="button" class="btn btn-cancel">Just Kidding.</button>  -->
+            </div>
 
-            !-- Social media will have clickable profile avatars that float left and when clicked the social meadia for that avatar will appear like the top tabs ->
-            <div id="social">Stay in touch!</div>
-        -->
-        </div>
+            <div id="Bark-Chronicles" class="content">
+                <h4 style="font-weight: bold;">Look what our humans talk about!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            </div>
 
-    </section>
+            <div id="Social-Media" class="content container-fluid">
+                <h4 style="font-weight: bold;">Stay in touch!</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+                </div>
+
+                <!-- Social Media Widget to display post -->
+                <div class="elfsight-app-999183b6-b289-4ff7-bc35-3fcaa73a97eb"></div>
+
+            </div>
+        </section>
         
         <footer class="footer">
             <h2>
@@ -132,11 +133,21 @@
             </div>
         </footer>
 
-       <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- check -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      
         <script src="./profiles/assets/script.js"></script>
 
     </body>
 </html>
+
+<!-- live chat code is <div class="elfsight-app-19938a6a-895b-4116-8a08-00eb42201903">hello</div>
+-->
