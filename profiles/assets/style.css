@@ -1,3 +1,5 @@
+/* Full Page Style Begins */
+
 *{
     box-sizing: border-box;
     font-family: 'Lobster Two', cursive;
@@ -13,6 +15,8 @@ body {
     margin: 0;
     min-height: 100vh;  
 } 
+
+/* Full Page Style Ends */
 
 /* Header Style Begins */
 
@@ -49,7 +53,7 @@ header {
 
 /* Avatar Ends */
 
-/* Style the Buttons for the Tabs Begins */
+/* Style the Buttons for the Full Page Tabs Begins */
 
 h4 {
     text-align: center;
@@ -105,10 +109,37 @@ h4 {
     display: none;
     padding: 100px 20px;
     height: 100%;
-    font-size: 2em;
+    font-size: 1em;
 }
 
-/* Style the Buttons for the Tabs Ends */
+
+/* Style the Buttons for the Full Page Tabs Ends */
+
+/* Style for Puppy Diaries Begins */
+
+.btn, .btn-2, .btn-3 {
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    border: 2px solid rgb(218, 56, 69);
+    padding: 5px;
+}
+
+.btn:hover,
+.btn-2:hover,
+.btn-3:hover {
+    background-color: rgb(218, 56, 69);
+    color: rgb(77, 178, 168);
+    font-weight: bold;
+}
+textarea {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(218, 56, 69);
+    background-color: rgba(28, 188, 180, 0.164);
+    padding: 15px;
+    margin: 25px;
+
+}
+/* Style for Puppy Diaries Ends */
 
 /* Social Media Page Icons Begin */
 
