@@ -23,7 +23,7 @@ body {
 
 .btn-primary {
    background-color: rgb(107, 188, 181);
-   color: rgb(209,110,121);
+   color: #d34959;
 }
 .hero-login {
   background-color: rgb(107, 188, 181);
@@ -80,7 +80,7 @@ footer div {
   line-height: 1.5;
   text-align: right;
 }
-=======
+
   .navbar-bg {
     background-color: rgb(107, 188, 181);
   }
@@ -90,7 +90,7 @@ footer div {
   }
   .btn-primary {
      background-color: rgb(107, 188, 181);
-     color: rgb(209,110,121);
+     color: #d34959;
   }
   .hero-login {
     background-color: rgb(107, 188, 181);
@@ -107,7 +107,7 @@ footer div {
 }
 .card-header{
   background-color: rgb(169,194,185);
-  color: rgb(209,110,121);
+  color: #d34959;
   font-size: 26px;
 }
 
@@ -148,6 +148,9 @@ footer div {
     display: inline-block;
   }
 
+  /*Google API Recommendations*/
+  
+
   /*Footer Section*/
   footer {
     width: 100%;
@@ -187,7 +190,7 @@ footer div {
   #about-header{
     width:100%;
     background-color: rgb(169,194,185);
-    color: rgb(209,110,121);
+    color: #d34959;
     font-size: 26px;
     padding: 20px;
   }
