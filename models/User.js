@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
+const { type } = require('os');
 
 class User extends Model {
     checkPassword(loginPw) {
@@ -37,7 +38,19 @@ User.init(
             validate: {
                 len: [10]
             }
-        }
+        },
+        
+        dogName: { 
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+
+        dogAge: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+
+
     },
     {
         hooks: { 
