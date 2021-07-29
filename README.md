@@ -10,11 +10,15 @@
 
 <!-- include gif of usage -->
 
-## Technologies Used
+## Languages and Technologies Used
 
-* 
-* 
-* 
+* HTML
+* CSS
+* Boostrap
+* JavaScript
+* ElfSight
+* Express
+* Sequalize
 * 
 
 ## Support
@@ -27,7 +31,7 @@
 
 ## Contributing
 
-* Project is not open to future contributors
+* Project is not open to future contributors.
 
 ## Authors and acknowledgement
 
