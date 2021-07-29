@@ -8,7 +8,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-  /*Hero-section*/
+    /*Hero-section*/
   .hero-head {
     text-align: center;
     background-color: rgb(107, 188, 181);
@@ -23,7 +23,7 @@ body {
 
 .btn-primary {
    background-color: rgb(107, 188, 181);
-   color: #d34959;
+   color: rgb(209,110,121);
 }
 .hero-login {
   background-color: rgb(107, 188, 181);
@@ -80,152 +80,3 @@ footer div {
   line-height: 1.5;
   text-align: right;
 }
-
-  .navbar-bg {
-    background-color: rgb(107, 188, 181);
-  }
-  .hero-body-background {
-    text-align: center;
-    background-color: white;
-  }
-  .btn-primary {
-     background-color: rgb(107, 188, 181);
-     color: #d34959;
-  }
-  .hero-login {
-    background-color: rgb(107, 188, 181);
-    text-align: center;
-  }
-
-/*Card-Section*/
-.card{
-  top: 50%;
-  left: 50%;
-  transform: translate(-67%,-55%);
-  border-style: solid;
-  border-color: black;
-}
-.card-header{
-  background-color: rgb(169,194,185);
-  color: #d34959;
-  font-size: 26px;
-}
-
-/*How-To Section Home Page*/
-  section {
-    padding: 55px;
-    background-color: rgb(169,194,185);
-    width: 70%; 
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,1%);
-  }
-  .steps {
-    text-align: center;
-  }
-  .steps div {
-    margin-bottom: 70px;
-  }
-  .steps img {
-    width: 15%;
-    margin: 10px 0;
-  }
-  .steps h3 {
-    font-size: 46px;
-    margin-top: 10px;
-  }
-  .steps p {
-    font-size: 23px;
-  }
-  .steps span {
-    font-size: 38px;
-  }
-  .section-title {
-    font-size: 55px;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-  }
-
-  /*Google API Recommendations*/
-  
-
-  /*Footer Section*/
-  footer {
-    width: 100%;
-    padding: 40px 35px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%,1%);
-  }
-  footer img {
-    width: 5%;
-    margin: 10px 0;
-  }
-  footer h3 {
-    font-size: 30px;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-  }
-  footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  /*About-Us Section*/
-  #about-us{
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-  }
-  #about-card{
-    width: 40%;
-    transform: translate(-120%,-200%);
-    border-style: solid;
-    border-color: black;
-  }
-  #about-header{
-    width:100%;
-    background-color: rgb(169,194,185);
-    color: #d34959;
-    font-size: 26px;
-    padding: 20px;
-  }
-  .stories{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-13%);
-  }
-  .story{
-    width:900px;
-    background-color: rgb(169,194,185);
-    font-size: 20px;
-    padding: 20px;
-  }
-  .stories img{
-    border-radius: 50%;
-    /*change img size*/
-    /*add img border*/
-    /*add overflow*/
-  }
-
-  /*Team Section*/
-  #team{
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    transform: translate(0%,-40%);
-  }
-  .team-title{
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    transform: translate(0%,-300%);
-    text-align: center;
-    color:white;
-  }
-
