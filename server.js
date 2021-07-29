@@ -1,7 +1,16 @@
 const express = require('express');
-const PORT = process.env.PORT || 3001;
-const app = express();
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
 
-app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(routes);
+app.use(express.static('public'));
+
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
