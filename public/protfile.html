@@ -12,99 +12,52 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="./profiles/assets/style.css">
+        <link rel="stylesheet" href="./assets/css/styleProfiles.css">
         <title>My Furfile</title>
         <link rel="icon" href="assets/images/paw.png">
     </head>
+
     <body>
         <header class="header">
             <h1 id="top" class="furfile">Furfile</h1>
-            <img src="./profiles/assets/images/paw with heart.jpg" alt="Avatar" class="avatar">
+            <img src="./assets/images/paw with heart.jpg" alt="Avatar" class="avatar">
             <!--Standard Header Buttons-->
             <div class="container-fluid">
                 <div class="row">
-                  <div class="d-flex bd-highlight mb-4">
-                    <div class="me-auto p-2 bd-highlight">
-                    <a href="./home.html">
-                      <input type="image" src="assets/images/home.png" width="100" height="75" name="homeButton" class="btTxt submit" id="homeButton">
-                    </a>
-                    </div>
-                    <div class="me-auto p-2 bd-highlight">
-                      <a href="./about-us.html">
-                        <input type="image" src="assets/images/aboutUs.png" width="100" height="75" name="aboutUsButton" class="btTxt submit" id="aboutUsButton">
-                      </a>
-                    </div>
-                    <div class="ms-auto p-2 bd-highlight">
-                      <a href="./login.html">
-                        <input type="image" src="assets/images/logInBowl.png" width="100" height="75" name="logInButton" class="btTxt submit" id="logInButton">
-                      </a>
-                    </div>
-                    <div class="ms-auto p-2 bd-highlight">
-                      <a href="./signUp.html">
-                        <input type="image" src="assets/images/signUp.png" width="100" height="75" name="signUpButton" class="btTxt submit" id="logInButton">
-                      </a>
-                    </div>
-                  </div>  
+                    <div class="d-flex bd-highlight mb-4">
+                        <div class="me-auto p-2 bd-highlight">
+                            <a href="./home.html">
+                            <input type="image" src="assets/images/home.png" width="100" height="75" name="homeButton" class="btTxt submit" id="homeButton">
+                            </a>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <a href="./about-us.html">
+                                <input type="image" src="assets/images/aboutUs.png" width="100" height="75" name="aboutUsButton" class="btTxt submit" id="aboutUsButton">
+                            </a>
+                        </div>
+                    </div> 
                 </div>
-              </div>
+            </div>
         </header>
         
         <div>
             <!-- Create the buttons to become the tags -->
             <button class="tab" onclick="openPage('My-Fav-Links', this, '#EDECEF')" >My Fav Links!</button> 
             <button class="tab" onclick="openPage('Furfriends', this, '#D16E79')">Furfriends</button>
-            <button class="tab" onclick="openPage('Calendar', this, '#ffffff')" >Calendar</button>
+            <button class="tab" onclick="openPage('Calendar', this, '#ffffff')" id="defaultOpen">Calendar</button>
             <button class="tab" onclick="openPage('Puppy-Diaries', this, '#A9C2B9')">Puppy Diaries</button>
             <button class="tab" onclick="openPage('Bark-Chronicles', this, '#242F48')">Bark Chronicles</button>
             <button class="tab" onclick="openPage('Social-Media', this, 'black')">Social Media</button>
         </div>
-        <section">
-        <!-- Create the content for the tabs (flexbox shrink)-->
-        <div id="My-Fav-Links" class="content" >
-            <h4 style="font-weight: bold;">Take a Look!</h4>
-            <a href="https://www.bringfido.com/track?aid=XXX"><img src="https://media.bringfido.com/banners/1.jpg"></a>
-            <a href="https://www.petsit.com/stuff/contentmgr/files/9/818a6902cce41bd28aeb85c760810099/files/janfeb2020_pet_sitters_world_magazine_download.pdf"><img src="./profiles/assets/images/Pet Sitter's World Magazine.png" width="15%" height="15%"></a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum test dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
 
-        <div id="Furfriends" class="content">
-            <h4 style="font-weight: bold;">Meet my peeps!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Calendar" class="content">
-            <div class="elfsight-app-a2f34c6d-37f1-4a77-8fad-88b20a3cb920"></div>
-        </div>
-
-        <div id="Puppy-Diaries" class="content">
-            <h4 style="font-weight: bold;">Guess what I did today!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Bark-Chronicles" class="content">
-            <h4 style="font-weight: bold;">Look what our humans talk about!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
-        </div>
-
-        <div id="Social-Media" class="content container-fluid">
-            <h4 style="font-weight: bold;">Stay in touch!</h4>
-            <div class="icons">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+        <section>
+            <!-- Create the content for the tabs -->
+            <div id="My-Fav-Links" class="content" >
+                <h4 style="font-weight: bold;">Take a Look!</h4>
+                <a href="https://www.bringfido.com/track?aid=XXX"><img src="https://media.bringfido.com/banners/1.jpg" border="0" alt="Dog with it's tounge sticking out for the Bring Fido Pet Friendly Vacations webiste banner."/></a>
+                <a href="https://www.petsit.com/stuff/contentmgr/files/9/818a6902cce41bd28aeb85c760810099/files/janfeb2020_pet_sitters_world_magazine_download.pdf"><img src="./assets/images/Pet Sitter's World Magazine.png" width="15%" height="15%" alt="A woman walking her german shephard dog on the cover of Pet Sitter's World magazine"></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
             </div>
 
             <div id="Furfriends" class="content">
@@ -125,38 +78,123 @@
                     <div class="m5 row justify-content-between">
                         <div class="col-12 col-md-6 col-xl-3 mb-3">
                             <div class="card">
-                                <h4 style="font-weight: bold;">Guess test what I did today!</h4>
-                                <ul id="add-today" class="add-group"></ul>
-                                <li id="post-item" class="add-post">post1</li>
-                                <button type="submit" class="btn" id="btn-add">Add Post</button>
+                                <h4 class="post-title" style="font-weight: bold;">Guess what I did today!</h4>
+                                <ul id="list-today" class="list-group list-group-flush"></ul>
+                                <div>error</div>
+                            <!--   <li id="post-item" class="add-post"></li> -->
+                                <button type="submit" class="btn btn-today" id="btn-add" data-target="#post-modal" data-toggle="modal">Add Post</button>
                             </div>
                         </div> 
                         
                         <div class="col-12 col-md-6 col-xl-3 mb-3">
                             <div class="card">
                                 <h4 style="font-weight: bold;">My Plans for Tomorrow!</h4>
-                                <ul id="add-tomorrow" class="add-group">
-                                    <li class="add-post">post2</li>
+                                <ul id="list-tomorrow" class="list-group">
+                                <li class="add-post">post2</li>
                                 </ul>
-                                <button type="submit" class="btn-2" id="btn-2-add">Add Post</button>
+                                <button type="submit" class="btn btn-tomorrow" id="btn-2-add" data-target="#post-modal2" data-toggle="modal">Add Post</button>
                             </div>
                         </div>
                         
                         <div class="col-12 col-md-6 col-xl-3 mb-4">
                             <div class="card">
                                 <h4 style="font-weight: bold;">Bucket List!</h4>
-                                <ul id="add-future" class="add-group"></ul>
-                                <button type="submit" class="btn-3" id="btn-3-add">Add Post</button>
+                                <ul id="list-future" class="list-group"></ul>
+                                <button type="submit" class="btn btn-future" id="btn-future-add" data-target="#future-modal" data-toggle="modal">Add Post</button>
                             </div>
                         </div>
-
                     </div>
                 </main>
 
-                <!-- Modal Begins --
+                <!-- Modal Begins -->
+                <!-- Today Modal-->
+                <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg class">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="todayPost">Today</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="post-modal">
+                                    <div class="form-group">
+                                        <label for="date-of-post" input type="text" id="datepicker">Date of Post</label>
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="date-of-post" autocomplete="off" required="required">
+                                    </div>
 
-                <button type="button" class="btn btn-post">Tell 'em!</button>
-                <button type="button" class="btn btn-cancel">Just Kidding.</button>  -->
+                                    <div class="form-group">
+                                        <label for="post-description">Post Description</label>
+                                        <textarea class="form-control" id="post-description" cols="5" rows="5" required="required"></textarea>
+                                    </div>                                  
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-tell-today" id="btn-post-today" data-dismiss="modal">Tell 'em!</button>
+                                <button type="button" class="btn btn-just-today" id="btn-cancel-today" data-dismiss="modal">Just Kidding.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomorrow Modal-->
+                <div class="modal fade" id="post-modal2" tabindex="-1" role="dialog" aria-labelledby="post-modal2" aria-hidden="true">
+                    <div class="modal-dialog modal-lg class">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="tomorrowPost">Tomorrow</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="date-of-post" input type="text" id="datepicker2">Date of Post</label>
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="date-of-post2" autocomplete="off">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="post-description2">Post Description</label>
+                                        <textarea class="form-control" id="post-description2" cols="5" rows="5"></textarea>
+                                    </div>                                  
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-2-post" id="btn-post-tomorrow" data-dismiss="modal">Tell 'em!</button>
+                                <button type="button" class="btn btn-2-cancel" id="btn-cancel-tomorrow" data-dismiss="modal">Just Kidding.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bucket List Modal-->
+                
+                <div class="modal fade" id="future-modal" tabindex="-1" role="dialog" aria-labelledby="future-modal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg class">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="future-Post">Future</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="future-post" input type="text" id="future-datepicker">Date of Post</label>
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="future-post" autocomplete="off">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="future-description">Post Description</label>
+                                        <textarea class="form-control" id="future-description" cols="5" rows="5"></textarea>
+                                    </div>                                  
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-to-post" id="btn-post-future" data-dismiss="modal">Tell 'em!</button>
+                                <button type="button" class="btn btn-to-cancel" id="btn-cancel-future" data-dismiss="modal">Just Kidding.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
             <div id="Bark-Chronicles" class="content">
@@ -180,20 +218,17 @@
 
                 <!-- Social Media Widget to display post -->
                 <div class="elfsight-app-999183b6-b289-4ff7-bc35-3fcaa73a97eb"></div>
-
             </div>
-        </section>
-        
+
+        </section>        
         <footer class="footer">
             <div class="d-flex flex-row bd-highlight mb-6 justify-content-between">
                 <img src="assets/images/paw.png">
-                <div class="p-2 bd-highlight">© 2021 PuppyLove</div>
-                <div class="p-2 bd-highlight">Home</div>
-                <div class="p-2 bd-highlight">About Us</div>
-                <div class="p-2 bd-highlight">Puppy Profile</div>
-                <div class="p-2 bd-highlight">Puppy Recommendations</div>
+                <div class="p-2 bd-highlight"><a href="./home.html">Home</a></div>
+                <div class="p-2 bd-highlight"><a href="./about-us.html">About Us</a></div>
+                <div class="p-2 bd-highlight"><a href="">Puppy Recommendations</a></div>
                 <img src="assets/images/paw.png">
-              </div>
+            </div>
             <h2>
                 Made for your fur babies by Team "Refreshed"
             </h2>
@@ -202,7 +237,6 @@
             <div>
                 <h4>
                     <a href="#top">Top</a><br />
-                    <a href="./home.html">Back to the Begining</a><br />
                     &copy; 2021 Puppy Love
                 </h4>
             </div>
@@ -218,8 +252,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-      
-        <script src="./profiles/assets/script.js"></script>
+    
+        <script src="./assets/js/scriptProfile.js"></script>
 
     </body>
 </html>

@@ -13,10 +13,31 @@ html {
 
 body {
     margin: 0;
-    min-height: 100vh;  
+    min-height: 100vh;
+    background-color: rgb(28, 188, 181);
 } 
 
 /* Full Page Style Ends */
+
+/* Scrolbar Style Begins */
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(28, 188, 181, 1.2);
+    border-radius: 1em;
+    background-color: rgba(218, 56, 69, 0.876);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: rgb(28, 188, 181);
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+
+/* Scrolbar Style Ends */
 
 /* Header Style Begins */
 
@@ -106,39 +127,47 @@ h4 {
 
 .content {
     color: rgb(218, 56, 69);
-    display: none;
+    display: block;
     padding: 100px 20px;
     height: 100%;
     font-size: 1em;
 }
 
-
 /* Style the Buttons for the Full Page Tabs Ends */
 
 /* Style for Puppy Diaries Begins */
 
-.btn, .btn-2, .btn-3 {
+.btn {
     color: rgb(218, 56, 69);
     font-family: 'Lobster Two', cursive;
     border: 2px solid rgb(218, 56, 69);
     padding: 5px;
+    
 }
 
-.btn:hover,
-.btn-2:hover,
-.btn-3:hover {
+.btn:hover {
     background-color: rgb(218, 56, 69);
     color: rgb(77, 178, 168);
     font-weight: bold;
 }
-textarea {
-    font-family: 'Lobster Two', cursive;
-    color: rgb(218, 56, 69);
-    background-color: rgba(28, 188, 180, 0.164);
-    padding: 15px;
-    margin: 25px;
 
+textarea {
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    overflow: auto;
+    resize: vertical;
 }
+
+.form-control {
+    color: rgb(77, 178, 168);
+}
+
+ul.list-group {
+    min-height: 130px;
+    color: rgb(218, 56, 69);
+  }
+  
+
 /* Style for Puppy Diaries Ends */
 
 /* Social Media Page Icons Begin */
@@ -215,55 +244,3 @@ footer {
 }
 
 /* Footer Ends */
-
-
-
-/* Scrolbar Style Begins //
-
-body::-webkit-scrollbar {
-    width: 2em;
-}
-
-body::-webkit-scrollbar-track {
-    background-image: url('/profiles/assets/images/traveling\ paws.png');
-    background-size: 30px;
-    background-position: center;
-}
-
-body::-webkit-scrollbar-button {
-    background-image: url('/profiles/assets/images/paw\ with\ heart\ small.jpg');
-    background-repeat: no-repeat;
-    min-height: 2em;
-}
-
-/*
-body::-webkit-scrollbar-thumb {
-    background-image: url('/profiles/assets/images/paw\ with\ heart.jpg');
-    background-size: 2em;
-    min-block-size: 3em;
-}
-*/
-
-/* Scrolbar Style Ends //
-
-/*
-color: rgb(36, 47, 72); // Hex #242F48 // purple
-color: rgb(209, 110, 121); // Hex #D16E79 // salmon
-color: rgb(218, 56, 69); // Hex #da3845 // darker salmon
-color: rgb(169, 194, 185); // Hex #A9C2B9 // bluish grey
-color: rgb(237, 236, 239); // Hex #EDECEF //pale green
-color: rgb(28, 188, 181); // Hex #1CBCB5 // tealish
-color: rgb(0, 0, 0), // Hex #000000 // black
-color: rgb(255, 255, 255) // Hex #ffffff // white
-
-Scocial Media colors
-background: rgb(59, 89, 152); // Hex #3b5998 // Facebook
-background: rgb(187, 0, 0); // Hex #bb0000 // YouTube
-background: rgb(203, 32, 39); // Hex #cb2027 // Pinterest
-background: rgb(18, 86, 136); // Hex #125688 // Instagram
-background: rgb(85, 172, 238); // Hex #55ACEE // Twitter
-background: rgb(255, 252, 0); // Hex #fffc00 //Snapchat
-
-font-family: 'Lobster Two', cursive;
-font-family: 'Yomogi', cursive;
-*/

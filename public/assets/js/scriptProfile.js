@@ -18,7 +18,7 @@ function openPage(tabName, elmnt, color) {
 };
 
 // This tab will open by default 
-//document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
 
 // Full Page Tabs Ends //
 
@@ -42,7 +42,7 @@ buttonEl.addEventListener("click", function() {
 });
 
 //Puppy Diaries Begins
-
+/*
 var post = {};
 
 var savePost = function() {
@@ -61,7 +61,7 @@ var loadPost = function() {
 
 }
 
-
+*/
 
 
 
