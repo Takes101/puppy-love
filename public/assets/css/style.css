@@ -101,9 +101,10 @@ footer div {
 .card{
   top: 50%;
   left: 50%;
-  transform: translate(-67%,-55%);
+  transform: translate(-105%,-220%);
   border-style: solid;
   border-color: black;
+  width: 40%;
 }
 .card-header{
   background-color: rgb(169,194,185);
@@ -119,7 +120,7 @@ footer div {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,1%);
+    transform: translate(-50%,-10%);
   }
   .steps {
     text-align: center;
