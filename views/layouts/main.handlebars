@@ -26,22 +26,26 @@
       <div class="row">
         <div class="d-flex bd-highlight mb-4">
           <div class="me-auto p-2 bd-highlight">
-          <a href="./home.html">
+          <a href="/home">
             <input type="image" src="/images/home.png" width="100" height="75" name="homeButton" class="btTxt submit" id="homeButton">
           </a>
           </div>
           <div class="me-auto p-2 bd-highlight">
-            <a href="./about-us.html">
+            <a href="/about-us">
               <input type="image" src="/images/aboutUs.png" width="100" height="75" name="aboutUsButton" class="btTxt submit" id="aboutUsButton">
             </a>
           </div>
           <div class="ms-auto p-2 bd-highlight">
-            <a href="./login.html">
+            {{#if loggedIn}}
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+            <a href="/login">
               <input type="image" src="/images/logInBowl.png" width="100" height="75" name="logInButton" class="btTxt submit" id="logInButton">
             </a>
+             {{/if}}
           </div>
           <div class="ms-auto p-2 bd-highlight">
-            <a href="./signUp.html">
+            <a href="/signUp">
               <input type="image" src="/images/signUp.png" width="100" height="75" name="signUpButton" class="btTxt submit" id="logInButton">
             </a>
           </div>
