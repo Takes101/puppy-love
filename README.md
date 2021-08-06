@@ -15,7 +15,7 @@
 * ElfSight
 * Express
 * Sequalize
-* 
+* Handlebars
 
 ## Support
 
