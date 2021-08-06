@@ -32,12 +32,6 @@ router.get('/:id', (req, res) => {
           attributes: ['title']
         }
       },
-      {
-        model: Post,
-        attributes: ['title'],
-        through: Vote,
-        as: 'voted_posts'
-      }
     ]
   })
     .then(dbUserData => {
@@ -56,15 +50,25 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
-    username: req.body.username,
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
+    dogName: req.body.dogName,
+    dogAge: req.body.dogAge,
+    dogBreed: req.body.dogBreed,
+    dogBio: req.body.dogBio,
+    city: req.body.city,
+    state: req.body.state,
+    zip: req.body.zip
   })
-    .then(dbUserData => res.json(dbUserData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+    .then(dbUserData => {
+      req.session.save(() => {
+        req.session.user_id = dbUserData.id;
+        req.session.username = dbUserData.username;
+        req.session.loggedIn = true;
+  
+        res.json(dbUserData);
+      });
+    })
 });
 
 router.post('/login', (req, res) => {
@@ -86,7 +90,14 @@ router.post('/login', (req, res) => {
       return;
     }
 
-    res.json({ user: dbUserData, message: 'You are now logged in!' });
+    req.session.save(() => {
+      // declare session variables
+      req.session.user_id = dbUserData.id;
+      req.session.username = dbUserData.username;
+      req.session.loggedIn = true;
+
+      res.json({ user: dbUserData, message: 'You are now logged in!' });
+    });
   });
 });
 
