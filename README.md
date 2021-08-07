@@ -1,10 +1,10 @@
 # Title
 
-* Puppy Love
+* PuppyLove
 
 ## Description 
 
-* Puppy Love provides a safe place for pets and pet owners to connect!
+* PuppyLove provides a safe place for Furbabies and Furfamilies to connect!
 
 ## Visuals
 
@@ -14,8 +14,8 @@
 
 * ElfSight
 * Express
-* Sequalize
 * Handlebars
+* Sequalize
 
 ## Support
 
@@ -38,9 +38,9 @@
 
 ## User story
 
-* As a user I want to enjoy a site that connects me to furfamilies around the globe.
+* As a user I want to enjoy a site that connects me to Furfamilies around the globe.
 * When I select the About Us button then I am presented with information about the site creators.
 * When I select the LogIn button then I am taken to my Furfile profile page.
 * When I select the Sign up button then I am asked to enter information to create an account.
-* When I select the Create Account button then I am taken to my Furfile.
-* When I select the Tabs of my Furfile then I am presented with links to my favorite sites, my Furfriends, personal calendar, my puppy's journal, a discussion board to link with other pet parents, and a Social Media page to stay connected.
+* When I select the Create Account button then I am taken to my Furfile profile page.
+* When I select the Tabs of my Furfile then I am presented with links to my favorite sites, my Furfriends, personal calendar, my Furbaby's journal, a discussion board to link with other Furfamiles, and a Social Media page to stay connected.
