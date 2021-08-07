@@ -30,12 +30,12 @@ router.get('/about-us', (req, res) => {
   res.render('about-us');
 })
 
-router.get('/profile', (req, res) => {
+router.get('/furfile', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
   }
-  res.render('profile');
+  res.render('furfile');
 })
 
 module.exports = router;
