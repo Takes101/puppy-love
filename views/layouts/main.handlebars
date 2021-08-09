@@ -34,16 +34,16 @@
             <a href="/about-us">
               <input type="image" src="/images/aboutUs.png" width="100" height="75" name="aboutUsButton" class="btTxt submit" id="aboutUsButton">
             </a>
-              {{#if loggedIn}}
+
           </div>
           <div class="ms-auto p-2 bd-highlight">
             <a href="/login">
               <input type="image" src="/images/logInBowl.png" width="100" height="75" name="logInButton" class="btTxt submit" id="logInButton">
             </a> 
           </div>
-          {{else}}
+       
            <a href="/login">login</a>
-        {{/if}}
+
           <div class="ms-auto p-2 bd-highlight">
             <a href="/signUp">
               <input type="image" src="/images/signUp.png" width="100" height="75" name="signUpButton" class="btTxt submit" id="logInButton">
@@ -74,10 +74,11 @@
       <img src="/images/paw.png">
     </div>
   </footer>
+ <nav>
+  <button id="logout" class="btn-no-style">logout</button>
+</nav>
+  <script type="text/javascript" src="/javascript/logout.js"></script>
 
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
 </body>
 </html>
 
