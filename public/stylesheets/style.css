@@ -99,9 +99,7 @@ footer div {
 
 /*Card-Section*/
 .card{
-  top: 50%;
-  left: 50%;
-  transform: translate(-105%,-220%);
+  transform: translate(-67%,-55%);
   border-style: solid;
   border-color: black;
   width: 40%;
@@ -148,6 +146,150 @@ footer div {
     padding: 0 100px 20px 100px;
     display: inline-block;
   }
+
+  /*Google API Recommendations*/
+  /* Profile css*/
+  h4 {
+    text-align: center;
+    font-weight: bolder;   
+}
+
+.tab {
+    background-color: rgb(28, 188, 181);
+    color: rgb(218, 56, 69);
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 1em 1em;
+    width: 16.662%;
+}
+
+.tab:hover {
+    background-color: rgb(226, 184, 40);
+    border-top: solid rgb(209, 110, 121);
+    border-left: solid rgb(209, 110, 121);
+    border-right: solid rgb(209, 110, 121);
+    font-size: 24px;
+}
+
+#My-Fav-Links {
+    background-color: rgb(237, 236, 239);
+}
+
+#Furfriends {
+    background-color: rgb(209, 110, 121);
+}
+
+#Calendar {
+    background-color: rgb(255, 255, 255);
+}
+
+#Puppy-Diaries {
+    background-color: rgb(169, 194, 185);
+}
+
+#Bark-Chronicles {
+    background-color: rgb(36, 47, 72);
+}
+
+#Social-Media {
+    background-color: black;
+}
+
+.content {
+    color: rgb(218, 56, 69);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    font-size: 1em;
+}
+
+
+/* Style the Buttons for the Full Page Tabs Ends */
+
+/* Style for Puppy Diaries Begins */
+
+.btn, .btn-2, .btn-3 {
+    color: rgb(218, 56, 69);
+    font-family: 'Lobster Two', cursive;
+    border: 2px solid rgb(218, 56, 69);
+    padding: 5px;
+}
+
+.btn:hover,
+.btn-2:hover,
+.btn-3:hover {
+    background-color: rgb(218, 56, 69);
+    color: rgb(77, 178, 168);
+    font-weight: bold;
+}
+textarea {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(218, 56, 69);
+    background-color: rgba(28, 188, 180, 0.164);
+    padding: 15px;
+    margin: 25px;
+
+}
+/* Style for Puppy Diaries Ends */
+
+/* Social Media Page Icons Begin */
+
+.fa:hover {
+    background: rgb(209, 110, 121);
+}
+
+.fa {
+    padding: 40px;
+    margin: 15px;
+}
+
+.fa-facebook {
+    background: rgb(59, 89, 152);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-youtube {
+    background: rgb(187, 0, 0);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-pinterest {
+    background: rgb(203, 32, 39);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-instagram {
+    background: rgb(18, 86, 136);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-twitter {
+    background: rgb(85, 172, 238);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+}
+
+.fa-snapchat-ghost {
+    background: rgb(255, 252, 0);
+    color: white;
+    border-radius: 40px 40px 40px 10px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 5em 2em 5em 2em;
+}
 
   /*Footer Section*/
   footer {
