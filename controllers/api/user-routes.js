@@ -32,15 +32,6 @@ router.get('/:id', (req, res) => {
           attributes: ['title']
         }
       },
-<<<<<<< HEAD
-      {
-        model: Post,
-        attributes: ['title'],
-        through: Vote,
-        as: 'voted_posts'
-      }
-=======
->>>>>>> main
     ]
   })
     .then(dbUserData => {
@@ -59,17 +50,6 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
-<<<<<<< HEAD
-    username: req.body.username,
-    email: req.body.email,
-    password: req.body.password
-  })
-    .then(dbUserData => res.json(dbUserData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-=======
     email: req.body.email,
     password: req.body.password,
     dogName: req.body.dogName,
@@ -89,7 +69,6 @@ router.post('/', (req, res) => {
         res.json(dbUserData);
       });
     })
->>>>>>> main
 });
 
 router.post('/login', (req, res) => {
@@ -111,9 +90,6 @@ router.post('/login', (req, res) => {
       return;
     }
 
-<<<<<<< HEAD
-    res.json({ user: dbUserData, message: 'You are now logged in!' });
-=======
     req.session.save(() => {
       // declare session variables
       req.session.user_id = dbUserData.id;
@@ -122,7 +98,6 @@ router.post('/login', (req, res) => {
 
       res.json({ user: dbUserData, message: 'You are now logged in!' });
     });
->>>>>>> main
   });
 });
 
@@ -166,8 +141,6 @@ router.delete('/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-<<<<<<< HEAD
-=======
 });
 
 router.post('/logout', (req, res) => {
@@ -179,7 +152,6 @@ router.post('/logout', (req, res) => {
   else {
     res.status(404).end();
   }
->>>>>>> main
 });
 
 module.exports = router;
