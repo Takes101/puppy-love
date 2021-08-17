@@ -1,84 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>PupppyLove</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="icon" href="images/paw.png">
 </head>
+
 <body>
   <div class="wrapper">
-   <header>
-    <div class="hero-head">
-      <div class="container-fluid">
-        <img src="images/LOGO.png"  width="250" height="100" class="d-inline-block align-text-top">
-      </div>
-    </div>
-    <div class="hero-body has-background-image">
-      <img src="/images/heroBackground2.png" class="img-fluid" alt="...">
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="d-flex bd-highlight mb-4">
-          <div class="me-auto p-2 bd-highlight">
-          <a href="/homepage">
-            <input type="image" src="/images/home.png" width="100" height="75" name="homeButton" class="btTxt submit" id="homeButton">
+    <header>
+      <div class="hero-head">
+        <div class="container-fluid">
+          <a href="/">
+            <input type="image" src="/images/LOGO.png" width="250" height="100" class="d-inline-block align-text-top"
+              id="homepage">
           </a>
-          </div>
-          <div class="me-auto p-2 bd-highlight">
-            <a href="/about-us">
-              <input type="image" src="/images/aboutUs.png" width="100" height="75" name="aboutUsButton" class="btTxt submit" id="aboutUsButton">
-            </a>
-
-          </div>
-          <div class="ms-auto p-2 bd-highlight">
-            <a href="/login">
-              <input type="image" src="/images/logInBowl.png" width="100" height="75" name="logInButton" class="btTxt submit" id="logInButton">
-            </a> 
-          </div>
-       
-           <a href="/login">login</a>
-
-          <div class="ms-auto p-2 bd-highlight">
-            <a href="/signUp">
-              <input type="image" src="/images/signUp.png" width="100" height="75" name="signUpButton" class="btTxt submit" id="logInButton">
-            </a>
-          </div>
-        </div>  
+        </div>
       </div>
-    </div>
-  </header>
-   <br>
-   <br>
+      <div class="hero-body has-background-image">
+        <img src="/images/heroBackground2.png" class="img-fluid" alt="...">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-flex d-flex justify-content-around">
+            <div class="align-items-center">
+              {{#if loggedIn}}
+              <a href="/login">
+                <input type="image" src="/images/logoutDogBowl.png" width="100" height="75" name="homeButton"
+                  class="submit" id="logout">
+              </a>
+              {{else}}
+              <a href="/login">
+                <input type="image" src="/images/signUp.png" width="100" height="75" name="homeButton" class="submit"
+                  id="login">
+              </a>
+                {{/if}}
+            </div>
+
+            <div class="align-items-center">
+              <a href="/about-us">
+                <input type="image" src="/images/aboutUs.png" width="100" height="75" name="aboutUsButton"
+                  class="submit" id="aboutus">
+              </a>
+            </div>
+            <div class="align-items-center">
+               {{#if loggedIn}}
+              <a href="/dashboard">
+                <input type="image" src="/images/furfileDogBowl.png" width="100" height="75" name="logInButton"
+                  class="submit" id="dashboard">
+              </a>
+              {{else}}
+               <a href="/login">
+                <input type="image" src="/images/logInBowl.png" width="100" height="75" name="logInButton"
+                  class="submit" id="login">
+              </a>
+                {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br>
+    <br>
     <main>
-      {{{ body }}}
-    </main>
-    <footer>
-    <div class="d-flex flex-row bd-highlight mb-6 justify-content-between">
-      <img src="/images/paw.png">
-      <div class="p-2 bd-highlight">© 2021 PuppyLove</div>
-      <a href="/homepage">
-        <div class="p-2 bd-highlight">Home</div>
-      </a>
-      <a href="/about-us">
-        <div class="p-2 bd-highlight">About Us</div>
-      </a>
-      <a href="/profile">
-        <div class="p-2 bd-highlight">Puppy Profile</div>
-      </a>
-      <img src="/images/paw.png">
-    </div>
-  </footer>
- <nav>
-  <button id="logout" class="btn-no-style">logout</button>
-</nav>
-  <script type="text/javascript" src="/javascript/logout.js"></script>
+      </nav>
+      </header>
+      <main>
+        {{{ body }}}
+      </main>
+      <footer>
+        <div class="d-flex flex-row bd-highlight mb-6 justify-content-between">
+          <img src="/images/paw.png">
+          <div class="p-2 bd-highlight">© 2021 PuppyLove</div>
+          <a href="/homepage">
+            <div class="p-2 bd-highlight">Home</div>
+          </a>
+          <a href="/about-us">
+            <div class="p-2 bd-highlight">About Us</div>
+          </a>
+          <a href="/profile">
+            <div class="p-2 bd-highlight">Puppy Profile</div>
+          </a>
+          <img src="/images/paw.png">
+        </div>
+      </footer>
+  </div>
 
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+
+  {{#if loggedOut}}
+  <script src="/javascript/login.js"></script>
+  {{/if}}
 </body>
-</html>
 
+</html>

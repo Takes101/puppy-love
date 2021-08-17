@@ -1,35 +1,47 @@
-<!--Welcome Section-->
-  <div class="container-fluid">
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
+
+       <!--Welcome Section-->
+    
     <div class="row">
       <div class="col-6">
-        <img src="images/petPic3.jpg" width="750" height="450" class="align-center">
+        <img src="/images/petPic3.jpg" width="300" height="150">
       </div>
-      <div class="col-1"></div>
     </div>
-  </div>
   <br>
-  <!-- "what you do" section -->
-  <section id="what-you-do" class="steps">
-      <img src="images/loginLogo.png">
-      <h2><span>Get Started!</span></h2><br>
-    <div>
-      <img src="images/profileIcon.png">
-      <h3><span>Create a Pet Protfile!</span></h3>
-      <p>Upload cute pet pictures, fill out a bio, and provide facts about your pet to showcase their personalities!</p>
-    </div>
-    <div>
-      <img src="images/229116-200.png">
-      <h3><span>Fill Out Pet Questionnair</span></h3>
-      <p>To get the best pet friendly recommendations and get to know your community better, answer a few questions!</p>
-    </div>
-    <div>
-      <img src="images/add-location.png">
-      <h3><span>Find Pet Friendly Places</span></h3>
-      <p>Attend pet friendly events, cafes, parks, and socials! Don't forget to leave a review and rate your exprience.</p>
-    </div>
-    <div>
-      <img src="images/meet.png">
-      <h3><span>Meet other Pet and Pet Owners</span></h3>
-      <p>Enjoy meeting other pet owners and create a meaningful community!</p>
-    </div>
-  </section>
+        <br>
+        <!-- "what you do" section -->
+         <div class="container-fluid">
+        <section id="what-you-do" class="steps">
+          <img src="images/loginLogo.png">
+          <h2><span>Get Started!</span></h2><br>
+          <div>
+            <img src="images/profileIcon.png">
+            <h3><span>Create a Pet Protfile!</span></h3>
+            <p>Upload cute pet pictures, fill out a bio, and provide facts about your pet to showcase their
+              personalities!</p>
+          </div>
+          <div>
+            <img src="images/229116-200.png">
+            <h3><span>Fill Out Pet Questionnair</span></h3>
+            <p>To get the best pet friendly recommendations and get to know your community better, answer a few
+              questions!</p>
+          </div>
+          <div>
+            <img src="images/add-location.png">
+            <h3><span>Find Pet Friendly Places</span></h3>
+            <p>Attend pet friendly events, cafes, parks, and socials! Don't forget to leave a review and rate your
+              exprience.</p>
+          </div>
+          <div>
+            <img src="images/meet.png">
+            <h3><span>Meet other Pet and Pet Owners</span></h3>
+            <p>Enjoy meeting other pet owners and create a meaningful community!</p>
+          </div>
+        </section>
+        </div>
