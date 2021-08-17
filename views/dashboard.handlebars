@@ -1,0 +1,83 @@
+<div>
+            <h1 id="top" class="furfile">Furfile</h1>
+            <img src="assets/images/paw with heart.jpg" alt="Avatar" class="avatar">
+        </header>
+<div>
+            <!-- Create the buttons to become the tags -->
+            <button class="tab" onclick="openPage('My-Fav-Links', this, '#EDECEF')" >My Fav Links!</button> 
+            <button class="tab" onclick="openPage('Furfriends', this, '#D16E79')">Furfriends</button>
+            <button class="tab" onclick="openPage('Calendar', this, '#ffffff')" id="defaultOpen">Calendar</button>
+            <button class="tab" onclick="openPage('Puppy-Diaries', this, '#A9C2B9')">Puppy Diaries</button>
+            <button class="tab" onclick="openPage('Bark-Chronicles', this, '#242F48')">Bark Chronicles</button>
+            <button class="tab" onclick="openPage('Social-Media', this, 'black')">Social Media</button>
+        </div>
+        <section>
+            <!-- Create the content for the tabs -->
+            <div id="My-Fav-Links" class="content" >
+                <h4 style="font-weight: bold;">Take a Look!</h4>
+                <a href="https://www.bringfido.com/track?aid=XXX"><img src="https://media.bringfido.com/banners/1.jpg" border="0" alt="Dog with it's tounge sticking out for the Bring Fido Pet Friendly Vacations webiste banner."/></a>
+                <a href="https://www.petsit.com/stuff/contentmgr/files/9/818a6902cce41bd28aeb85c760810099/files/janfeb2020_pet_sitters_world_magazine_download.pdf"><img src="assets/images/Pet Sitter's World Magazine.png" width="15%" height="15%" alt="A woman walking her german shephard dog on the cover of Pet Sitter's World magazine"></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            </div>
+  <div id="Furfriends" class="content">
+                <h4 style="font-weight: bold;">Meet my peeps!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam in laudantium libero aspernatur sed ea quos harum voluptates totam laborum corrupti repellendus eius aliquid itaque error voluptas, reiciendis unde.</p>
+            </div>
+
+            <div id="Calendar" class="content">
+                <div class="elfsight-app-a2f34c6d-37f1-4a77-8fad-88b20a3cb920"></div>
+            </div>
+
+
+</section>
+<br>
+ <br>
+
+<section>
+  <h2>Bark Chronicals</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-url">Link</label>
+      <input id="post-url" name="post-url" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+{{#if posts.length}}
+<section>
+  <h2>Puppy Diaries</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}">
+                <input type="image" src="/images/editBone.png" width="200" height="100"
+                  class="edit-link">
+              </a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- check -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="/javascript/add-post.js"></script>
