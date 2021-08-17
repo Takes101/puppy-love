@@ -67,40 +67,38 @@
           </div>
         </div>
       </div>
-    </header>
-    <br>
-    <br>
+    </div>
+  </header>
+   <br>
+   <br>
     <main>
-      </nav>
-      </header>
-      <main>
-        {{{ body }}}
-      </main>
-      <footer>
-        <div class="d-flex flex-row bd-highlight mb-6 justify-content-between">
-          <img src="/images/paw.png">
-          <div class="p-2 bd-highlight">© 2021 PuppyLove</div>
-          <a href="/homepage">
-            <div class="p-2 bd-highlight">Home</div>
-          </a>
-          <a href="/about-us">
-            <div class="p-2 bd-highlight">About Us</div>
-          </a>
-          <a href="/profile">
-            <div class="p-2 bd-highlight">Puppy Profile</div>
-          </a>
-          <img src="/images/paw.png">
-        </div>
-      </footer>
-  </div>
-
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
+      {{{ body }}}
+    </main>
+    <footer>
+    <div class="d-flex flex-row bd-highlight mb-6 justify-content-between">
+      <img src="/images/paw.png">
+      <div class="p-2 bd-highlight">© 2021 PuppyLove</div>
+      <a href="/homepage">
+        <div class="p-2 bd-highlight">Home</div>
+      </a>
+      <a href="/about-us">
+        <div class="p-2 bd-highlight">About Us</div>
+      </a>
+      <a href="/profile">
+        <div class="p-2 bd-highlight">Puppy Profile</div>
+      </a>
+      <img src="/images/paw.png">
+    </div>
+  </footer>
+ <nav>
+  <button id="logout" class="btn-no-style">logout</button>
+</nav>
+  <script type="text/javascript" src="/javascript/logout.js"></script>
 
   {{#if loggedOut}}
   <script src="/javascript/login.js"></script>
   {{/if}}
 </body>
+</html>
 
 </html>
